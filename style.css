@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+nav {
+    padding: 1em 5em;
+    text-align: right;
+}
+
+a {
+    margin-right: 2em;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+}
+
+a:hover {
+    background-color: #24f387;
+}
+
+header {
+    height:75vh;
+    padding: 1em 5em;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10em;
+    text-transform: lowercase;
+    margin: 0.1em 0;
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    background-clip: text;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
