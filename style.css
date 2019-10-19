@@ -4,7 +4,9 @@ body {
 
 nav {
     padding: 1em 5em;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 a {
@@ -15,14 +17,33 @@ a {
     text-transform: lowercase;
 }
 
+.logo {
+    width: 30px;
+}
+
 a:hover {
     background-color: #24f387;
 }
 
 header {
-    height:75vh;
+    min-height:75vh;
     padding: 1em 5em;
     text-align: center;
+}
+
+header p,
+header h2 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header p:nth-of-type(2n) {
+    color: blue;
+}
+
+header p:nth-of-type(2n+1) {
+    color: red;
 }
 
 h1 {
@@ -39,9 +60,19 @@ h1 {
     color: transparent;
 }
 
-h2, p {
-    width: 50%;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: auto;
-    margin-right: auto;
+.img-container {
+    min-height: 100vh;
+    display: flex;
+    padding: 1em 5em;
+    justify-content: space-evenly; 
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.img-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
