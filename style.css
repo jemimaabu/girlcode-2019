@@ -103,3 +103,17 @@ header h2 {
     object-fit: cover;
     border-radius: 50%;
 }
+
+@media (max-width: 800px) {
+    nav {
+        padding: 1em;
+    }
+
+    header {
+        padding: 3em 1em 2em;
+    }
+
+    header p, header h2 {
+        width: 100%;
+    }
+}
